@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: line-chatbot-openai
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
