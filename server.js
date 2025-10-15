@@ -9,7 +9,7 @@ const OpenAIClient = require('./openaiClient');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.set('trust proxy', true);
+app.set('trust proxy', 1);
 
 // Validate Environment Variables
 const requiredEnvVars = ['OPENAI_API_KEY', 'LINE_CHANNEL_ACCESS_TOKEN', 'LINE_CHANNEL_SECRET'];
